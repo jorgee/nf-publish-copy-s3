@@ -6,6 +6,7 @@ params.tasks = 2
 nextflow.preview.output = true
 
 process create_random_file {
+	cpus 2
 
     input:
     val num_task
