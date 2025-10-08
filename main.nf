@@ -2,6 +2,7 @@ params.trial = 1
 params.count = 10
 params.size = '1M'
 params.tasks = 2
+params.vt = false
 
 nextflow.preview.output = true
 
@@ -37,7 +38,7 @@ workflow {
 
 output {
    files {
-	path "data-${params.trial}-${params.count}-${params.size}"
+	path "data-${params.trial}-${params.count}-${params.size}-${params.vt}"
 	}
 }
 
